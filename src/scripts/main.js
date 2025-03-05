@@ -18,7 +18,7 @@ function sortlist(people) {
     a.replace(/[^0-9.-]+/g, '');
     b.replace(/[^0-9.-]+/g, '');
 
-    return b.salary - a.salary
+    return +b.salary - +a.salary
   });
 
   return listForSalary.map((item) => item.name);
@@ -32,7 +32,7 @@ function getEmployees(people) {
     a.replace(/[^0-9.-]+/g, '');
     b.replace(/[^0-9.-]+/g, '');
 
-    return b.salary - a.salary
+    return +b.salary - +a.salary
   });
 }
 
