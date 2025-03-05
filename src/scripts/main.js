@@ -13,7 +13,7 @@ const people = arrayList.map((item) => ({
 
 /* ==================================== */
 
-function sortlist(people) {
+function sortList(people) {
   const listForSalary = people.sort((a, b) => {
     a.replace(/[^0-9.-]+/g, '');
     b.replace(/[^0-9.-]+/g, '');
